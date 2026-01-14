@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    background-color: #efefef;
+    height: 70px;
+}
+
+.header-contents {
+    display: flex;
+    gap: 50px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: grey;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.header-content:hover {
+    color: #fa65b1;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.header-icon {
+    background-color: grey;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.header-icon:hover {
+    background-color: #fa65b1;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 100px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.03);
+}
+
+.header-bottom ul {
+    list-style: none;
+    display: flex;
+    align-content: center;
+    gap: 40px;
+}
+
+.header-bottom ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    /* width: 100%; */
+    position: relative;
+}
+
+.header-bottom ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 2px;
+    background-color: #fa65b1;
+    transition: 0.3s;
+    width: 0%;
+}
+
+.header-bottom ul li a:hover::after {
+    width: 100%;
+}
+
+.btn {
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #fa65b1;
+    border: 1px solid #fa65b1;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #fa65b1;
+    color: white;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+section#home {
+    display: flex;
+    align-items: center;
+    padding: 150px 10%;
+    background-image: url(https://templatemo.com/templates/templatemo_568_digimedia/assets/images/slider-right-dec.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+}
+
+.home-content h3 {
+    color: #fa65b1;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    width: 70%;
+    line-height: 1.2;
+}
+
+.home-content p {
+    margin: 30px 0;
+    width: 70%;
+    color: #7777;
+    line-height: 1.8;
+}
+
+section#about {
+    display: flex;
+    align-items: center;
+    padding: 150px 10%;
+    gap: 50px;
+}
+
+.about-content h6 {
+    color: #726ae3;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.about-content span {
+    color: #726ae3;
+}
+
+.about-content h2 {
+    position: relative;
+    margin: 10px 0;
+    font-size: 35px;
+}
+
+.line {
+    background-color: #726ae3;
+    height: 2px;
+    width: 50px;
+    margin: 20px 0;
+}
+
+.about-img {
+    width: 1200px;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-content p:nth-child(4) {
+    width: 70%; 
+    color: #7777;
+    margin: 30px 0;
+    line-height: 1.8;
+}
+
+.circle {
+    display: flex;
+    gap: 40px;
+}
+
+.circle-content {
+    border: 5px solid #fa65b1;
+    border-radius: 50%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+}
+
+.circle-content:nth-child(2) {
+    border: 5px solid #726ae3;
+}
+
+.circle-content:nth-child(3) {
+    border: 5px solid #f58b56;
+}
+
+.circle-content h3 {
+    font-size: 35px;
+}
+
+.service-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.service-title h3 {
+    color: #726ae3;
+}
+
+.service-title h1 {
+    text-transform: capitalize;
+    position: relative;
+}
+
+.service-title span {
+    color: #726ae3;
+}
+
+.service-title h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #726ae3;
+    height: 2px;
+    bottom: -10px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px 0;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.service-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2a2a2a;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.service-about {
+    display: flex;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    padding: 80px 150px;
+    border-radius: 10px;
+}
+
+.service-content h3 {
+    color: #fa65b1;
+    font-size: 20px;
+}
+
+.service-content p {
+    margin: 30px 0;
+    color: #afafaf;
+    width: 70%;
+    line-height: 1.8;
+}
+
+.service-content ul {
+    list-style: none;
+}
+
+.service-content ul {
+    display: grid;
+    width: 70%;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.free-quote {
+    background-image: url(https://templatemo.com/templates/templatemo_568_digimedia/assets/images/quote-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    margin-top: 50px;
+}
+
+.title {
+    text-align: center;
+    padding-top: 120px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.title h3 {
+    text-transform: uppercase;
+}
+
+.title h1 {
+    position: relative;
+}
+
+.title h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    width: 70px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: white;
+}
+
+.free-quote form {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 700px;
+    margin: 100px auto;
+    padding: 15px;
+    border-radius: 50px 0 0 50px;
+}
+
+.free-quote input {
+    width: 40%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-left: 10px;
+    outline: none;
+    border-bottom: 1px solid #eee;
+    padding: 5px;
+}
+
+.free-quote button {   
+    background-color: #726ae3;
+    border: 1px solid #726ae3;
+    height: 80px;
+    width: 250px;
+    position: absolute;
+    cursor: pointer;
+    right: -200px;
+    color: white;
+    border-radius: 0 50px 50px 0;
+}
+
+section#projects {
+    background-image: url(https://templatemo.com/templates/templatemo_568_digimedia/assets/images/portfolio-right-dec.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: right;
+    background-size: cover;
+}
+
+.project-title {
+    padding: 30px 10%;
+}
+
+.project-title h3 {
+    text-transform: uppercase;
+    color: #726ae3;
+}
+
+.project-title span {
+    color: #726ae3;
+}
+
+.project-title h1 {
+    position: relative;
+}
+
+.project-title h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #726ae3;
+    bottom: -10px;
+    width: 100px;
+}
+
+.project-card {
+    background-color: white;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.project-header {
+    border-radius: 20px 20px 0 0;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.project-card h2 {
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.project-card p {
+    transition: 0.3s;
+}
+
+.project-card:hover h2 {
+    color: #fa65b1;
+}
+
+.project-card:hover p {
+    color: #fa65b1;
+}
+
+.project-cards {
+    display: flex;
+    padding: 50px 10%;
+    gap: 20px;
+}
+
+.blog-left {
+    padding: 0 10%;
+    width: 900px;
+    /* box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); */
+}
+
+.blog-header {
+    border-radius: 20px 20px 0 0;
+}
+
+.blog-header img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
