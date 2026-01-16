@@ -602,12 +602,6 @@ section#projects {
     width: 50%;
 }
 
-form {
-    display: flex;
-    gap: 30px;
-    margin-top: 50px;
-}
-
 form input {
     width: 100%;
     border-radius: 25px;
@@ -627,7 +621,7 @@ form input {
 form textarea {
     height: 200px;
     border-radius: 25px;
-    width: 100%;
+    width: 50%;
     border: 1px solid #eee;
     outline: none;
     padding: 15px;
@@ -643,10 +637,46 @@ form textarea {
     width: 50%;
 }
 
-form button {
-    width: 100%;
+.contact-form-box {
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
 }
 
 .form-btn {
     width: 100%;
+}
+
+.form-btn button {
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    background-color: transparent;
+    border: 1px solid #fa65b1;
+    border-radius: 50px;
+    color: #fa65b1;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-btn button:hover {
+    color: white;
+    background-color: #fa65b1;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    background-image: url(https://templatemo.com/templates/templatemo_568_digimedia/assets/images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    color: white;
+    padding: 25px 0;
+}
+
+footer p {
+    margin: 5px 0;
 }
