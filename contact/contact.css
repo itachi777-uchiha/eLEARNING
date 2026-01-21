@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: #f0fbfc;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+  color: #06bbcc;
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+header .logo i {
+  font-size: 30px;
+}
+header .logo a {
+  text-decoration: none;
+  color: #06bbcc;
+  font-size: 25px;
+  font-weight: bold;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header ul li:nth-child(5) a {
+  color: #06bbcc;
+}
+header ul li a {
+  text-decoration: none;
+  color: #181d38;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+header ul li a:hover {
+  color: #06bbcc;
+}
+header ul button {
+  background-color: #06bbcc;
+  color: #f0fbfc;
+  border: 1px solid #06bbcc;
+  height: 80px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 200px;
+}
+
+.about-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://bootstrapuchun.netlify.app/img/carousel-1.jpg);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #f0fbfc;
+}
+.about-home h1 {
+  font-size: 50px;
+}
+.about-home p {
+  margin-top: 10px;
+}
+
+.category-title {
+  text-align: center;
+  margin-top: 50px;
+}
+.category-title h3 {
+  color: #06bbcc;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.contact-box {
+  display: flex;
+  width: 80%;
+  margin: 50px auto;
+}
+.contact-box .contact-left .long-text {
+  width: 63%;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.contact-box .contact-left .contactIconContent {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-box .contact-left .contactIconContent .icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact-box .contact-left .contactIconContent .icon h3 {
+  color: #06bbcc;
+  margin-bottom: 10px;
+}
+.contact-box .contact-left .contactIconContent .icon i {
+  background-color: #06bbcc;
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-box .contact-center {
+  width: 70%;
+}
+.contact-box .contact-center iframe {
+  width: 100%;
+  height: 100%;
+}
+.contact-box .contact-right {
+  width: 50%;
+  margin-left: 20px;
+}
+.contact-box .contact-right form .top-input {
+  display: flex;
+  gap: 10px;
+}
+.contact-box .contact-right form .top-input input {
+  margin-bottom: 20px;
+}
+.contact-box .contact-right form input {
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  color: black;
+  border: 1px solid grey;
+}
+.contact-box .contact-right form input:focus {
+  border: 1px solid #06bbcc;
+}
+.contact-box .contact-right form textarea {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  height: 150px;
+  outline: none;
+  color: black;
+  border: 1px solid grey;
+}
+.contact-box .contact-right form textarea:focus {
+  border: 1px solid #06bbcc;
+}
+.contact-box .contact-right form button {
+  width: 100%;
+  height: 50px;
+  color: white;
+  margin-top: 20px;
+  background-color: #06bbcc;
+  border: 1px solid #06bbcc;
+  font-size: 17px;
+}
+
+footer {
+  background-color: #181d38;
+  height: 50vh;
+  padding: 50px;
+  color: #f0fbfc;
+  margin-top: 50px;
+}
+footer .footer-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+footer .footer-box .footer-link h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+footer .footer-box .footer-link ul {
+  list-style: none;
+}
+footer .footer-box .footer-link ul li {
+  margin-top: 10px;
+}
+footer .footer-box .footer-link ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+footer .footer-box .footer-link ul li a:hover {
+  letter-spacing: 2px;
+}
+footer .footer-box .footer-contact h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+footer .footer-box .footer-contact ul {
+  list-style: none;
+}
+footer .footer-box .footer-contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+footer .footer-box .footer-contact .contact-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+footer .footer-box .footer-contact .contact-icons .contact-icon {
+  border: 1px solid #f0fbfc;
+  border-radius: 50%;
+  width: 40px;
+  font-size: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+footer .footer-box .footer-contact .contact-icons .contact-icon:hover {
+  background-color: #f0fbfc;
+  color: #06bbcc;
+}
+footer .footer-box .gallery .gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+footer .footer-box .gallery h3 {
+  font-size: 24px;
+  margin: -20px;
+  margin-bottom: 20px;
+}
+footer .footer-box .gallery .gallery-img {
+  width: 80px;
+}
+footer .footer-box .gallery .gallery-img img {
+  width: 100%;
+}
+footer .footer-box .newsletter h3 {
+  font-size: 24px;
+  margin-top: -30px;
+}
+footer .footer-box .newsletter p {
+  margin: 20px 0;
+  width: 70%;
+  line-height: 1.7;
+}
+footer .footer-box .newsletter .input {
+  position: relative;
+}
+footer .footer-box .newsletter .input input {
+  padding: 10px 20px;
+  outline: none;
+  transition: 0.3s;
+}
+footer .footer-box .newsletter .input input:focus {
+  border: 2px solid #06bbcc;
+}
+footer .footer-box .newsletter .input button {
+  padding: 5px 10px;
+  position: absolute;
+  left: 120px;
+  top: 5px;
+  color: white;
+  background-color: #06bbcc;
+  border: 1px solid #06bbcc;
+}
+footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin: 50px auto;
+  position: relative;
+}
+footer .footer-bottom::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 0;
+  right: 0;
+  top: -20px;
+  background-color: #52565b;
+}
+footer .footer-bottom ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}/*# sourceMappingURL=contact.css.map */

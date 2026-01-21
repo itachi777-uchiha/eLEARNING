@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: #f0fbfc;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+  color: #06bbcc;
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+header .logo i {
+  font-size: 30px;
+}
+header .logo a {
+  text-decoration: none;
+  color: #06bbcc;
+  font-size: 25px;
+  font-weight: bold;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header ul li:nth-child(3) a {
+  color: #06bbcc;
+}
+header ul li a {
+  text-decoration: none;
+  color: #181d38;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+header ul li a:hover {
+  color: #06bbcc;
+}
+header ul button {
+  background-color: #06bbcc;
+  color: #f0fbfc;
+  border: 1px solid #06bbcc;
+  height: 80px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 200px;
+}
+
+.about-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://bootstrapuchun.netlify.app/img/carousel-1.jpg);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #f0fbfc;
+}
+.about-home h1 {
+  font-size: 50px;
+}
+.about-home p {
+  margin-top: 10px;
+}
+
+.category-title {
+  text-align: center;
+  margin-top: 50px;
+}
+.category-title h3 {
+  font-size: 25px;
+  color: #06bbcc;
+}
+
+.home-courses .course-cards {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+.home-courses .course-cards .course-card {
+  width: 400px;
+  background-color: aqua;
+}
+.home-courses .course-cards .course-card:hover img {
+  transform: scale(1.1);
+}
+.home-courses .course-cards .course-card .course-header {
+  position: relative;
+  overflow: hidden;
+}
+.home-courses .course-cards .course-card .course-header img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.home-courses .course-cards .course-card .course-header button {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 20px;
+  font-weight: bold;
+}
+.home-courses .course-cards .course-card .course-header button:nth-child(3) {
+  padding: 10px 25px;
+  background-color: #06bbcc;
+  border: 1px solid #06bbcc;
+  color: #f0fbfc;
+  cursor: pointer;
+  border-radius: 0 50px 50px 0;
+}
+.home-courses .course-cards .course-card .course-header button:nth-child(2) {
+  left: 20%;
+  padding: 10px 25px;
+  background-color: #06bbcc;
+  border: 1px solid #06bbcc;
+  color: #f0fbfc;
+  cursor: pointer;
+  border-radius: 50px 0 0 50px;
+}
+.home-courses .course-cards .course-card .course-content h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+.home-courses .course-cards .course-card .course-content .stars {
+  display: flex;
+  justify-content: center;
+}
+.home-courses .course-cards .course-card .course-content .stars i {
+  color: #06bbcc;
+}
+.home-courses .course-cards .course-card .course-content h3 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  padding: 0 18%;
+  color: #181d38;
+}
+.home-courses .course-cards .course-card .course-content .course-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid gray;
+  padding: 10px 10px;
+}
+.home-courses .course-cards .course-card .course-content .course-footer .course-left {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.home-testimonial .testimonial-cards {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+  justify-content: center;
+  text-align: center;
+}
+.home-testimonial .testimonial-cards .testimonial-card {
+  width: 400px;
+}
+.home-testimonial .testimonial-cards .testimonial-card .testimonial-header {
+  border-radius: 50%;
+}
+.home-testimonial .testimonial-cards .testimonial-card .testimonial-header h3 {
+  margin-top: 20px;
+  font-weight: 500;
+  color: #181d38;
+}
+.home-testimonial .testimonial-cards .testimonial-card .testimonial-header p {
+  color: #52565b;
+  margin-bottom: 20px;
+}
+.home-testimonial .testimonial-cards .testimonial-card .testimonial-header img {
+  border-radius: 50%;
+}
+.home-testimonial .testimonial-cards .testimonial-card .testimonial-content {
+  background-color: #06bbcc;
+  padding: 20px;
+  color: white;
+}
+
+footer {
+  background-color: #181d38;
+  height: 50vh;
+  padding: 50px;
+  color: #f0fbfc;
+  margin-top: 50px;
+}
+footer .footer-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+footer .footer-box .footer-link h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+footer .footer-box .footer-link ul {
+  list-style: none;
+}
+footer .footer-box .footer-link ul li {
+  margin-top: 10px;
+}
+footer .footer-box .footer-link ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+footer .footer-box .footer-link ul li a:hover {
+  letter-spacing: 2px;
+}
+footer .footer-box .footer-contact h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+footer .footer-box .footer-contact ul {
+  list-style: none;
+}
+footer .footer-box .footer-contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+footer .footer-box .footer-contact .contact-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+footer .footer-box .footer-contact .contact-icons .contact-icon {
+  border: 1px solid #f0fbfc;
+  border-radius: 50%;
+  width: 40px;
+  font-size: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+footer .footer-box .footer-contact .contact-icons .contact-icon:hover {
+  background-color: #f0fbfc;
+  color: #06bbcc;
+}
+footer .footer-box .gallery .gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+footer .footer-box .gallery h3 {
+  font-size: 24px;
+  margin: -20px;
+  margin-bottom: 20px;
+}
+footer .footer-box .gallery .gallery-img {
+  width: 80px;
+}
+footer .footer-box .gallery .gallery-img img {
+  width: 100%;
+}
+footer .footer-box .newsletter h3 {
+  font-size: 24px;
+  margin-top: -30px;
+}
+footer .footer-box .newsletter p {
+  margin: 20px 0;
+  width: 70%;
+  line-height: 1.7;
+}
+footer .footer-box .newsletter .input {
+  position: relative;
+}
+footer .footer-box .newsletter .input input {
+  padding: 10px 20px;
+  outline: none;
+  transition: 0.3s;
+}
+footer .footer-box .newsletter .input input:focus {
+  border: 2px solid #06bbcc;
+}
+footer .footer-box .newsletter .input button {
+  padding: 5px 10px;
+  position: absolute;
+  left: 120px;
+  top: 5px;
+  color: white;
+  background-color: #06bbcc;
+  border: 1px solid #06bbcc;
+}
+footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin: 50px auto;
+  position: relative;
+}
+footer .footer-bottom::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 0;
+  right: 0;
+  top: -20px;
+  background-color: #52565b;
+}
+footer .footer-bottom ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}/*# sourceMappingURL=courses.css.map */
